@@ -1,0 +1,19 @@
+<nav>
+    <div class="left-stn">
+        <a href="{% url 'display' %}">TRAINER'S PORTAL</a>
+    </div>
+
+    <div class="right-stn">
+        {% if request.user.is_authenticated %}
+            <div class="auth-btn">
+                <p>{{ request.user.username.upper }}</p>
+                <a href="{% url 'signout' %}">LOGOUT</a>
+            </div>
+        {% else %}
+            <div class="auth-btn">
+                <a href="{% url 'signin' %}">LOGIN</a>
+                <a href="{% url 'signup' %}">REGISTER</a>
+            </div>
+        {% endif %}
+    </div>
+</nav>

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+  SIGNOUT
+{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/signout.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container">
+    <h1>Are you sure you want logout</h1>
+    <div class="form">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button type="submit">Confirm</button>
+        </form>
+        <div class="cancel">
+            <a href="{% url 'display' %}">Go Back</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

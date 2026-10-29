@@ -1,0 +1,16 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+        <div class="fields">
+            <label for="">{{ field.label }}</label>
+            {{ field }}
+
+            {% for error in field.errors %}
+                <p style="color:red;">{{ error }}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+    <button type="submit">{{ operation }}</button>
+
+</form>

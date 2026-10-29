@@ -1,0 +1,89 @@
+
+.main-container {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing:border-box;
+}
+
+.heading {
+    font-size: 60px;
+}
+
+.main-container table {
+    border: 2px solid black;
+}
+
+.main-container table th,
+td {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.create-btn {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 250px;
+    background-color:coral;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.create-btn:hover {
+    background-color: rgb(145, 67, 67);
+    cursor: pointer;
+}
+
+.btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.btn a{
+    /* border:2px solid black; */
+    background-color: rgb(38, 184, 135);
+    text-decoration: none;
+    height:35px;    
+    width:70px;
+    border-radius:10px;
+    color:aliceblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* .btn #a2{ */
+    /* border:2px solid black; */
+    /* background-color: rgb(184, 38, 99);
+    text-decoration: none;
+    height:35px;
+    width:70px;
+    border-radius:10px;
+    color:aliceblue;
+    margin:auto; */
+
+/* } */
+
+.btn #a2{
+      background-color: rgb(184, 38, 99);
+    }
+
+#a1:hover{
+    background-color:rgba(6, 4, 69, 0.963) ;
+}
+
+#a2:hover{
+    background-color:rgba(96, 8, 8, 0.963) ;
+}

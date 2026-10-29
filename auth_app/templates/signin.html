@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} SIGNIN {% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/signin.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container">
+    <h1 class="heading">Login into Trainer's Portal</h1>
+
+    {% include 'partials/forms.html' %}
+</div>
+{% endblock content %}

@@ -1,0 +1,18 @@
+#python
+*.pyc
+__pycache__/
+*.pyd
+
+#Environment variables
+.venv/
+.env
+
+#local settings and configuration
+local_settings.py
+.vscode/
+*.log
+
+
+#SQlite database and windows thumbnail
+db.sqlite3
+Thumbs.db
